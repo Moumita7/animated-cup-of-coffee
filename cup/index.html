@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animated tea cup</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bonheur+Royale&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="right-col">
+        <p></p>
+        <img src="play.png" id="icon" />
+      </div>
+    </div>
+  </div>
+  <audio id="mySong">
+    <source src="song.mp3" type="audio/mp3" />
+  </audio>
+  <script>
+    var mySong = document.getElementById("mySong");
+    var icon = document.getElementById("icon");
+    icon.onclick = function () {
+      if (mySong.paused) {
+        mySong.play();
+        icon.src = "pause.png";
+      } else {
+        mySong.pause();
+        icon.src = "play.png";
+      }
+    };
+  </script>
+
+    <div class="start">
+        <h1>Good Day Start With A Coffee.......</h1>
+    </div>
+
+        
+    
+    <div class="container">
+        <div class="plate"></div>
+            <div class="cup">
+                <div class="top">
+                    <div class="vapour">
+                        <span style="--i:1;"></span>
+                        <span style="--i:3;"></span>
+                        <span style="--i:16;"></span>
+                        <span style="--i:5;"></span>
+                        <span style="--i:20;"></span>
+                        <span style="--i:6;"></span>
+                        <span style="--i:7;"></span>
+                        <span style="--i:10;"></span>
+                        <span style="--i:8;"></span>
+                        <span style="--i:17;"></span>
+                        <span style="--i:11;"></span>
+                        <span style="--i:12;"></span>
+                        <span style="--i:13;"></span>
+                        <span style="--i:14;"></span>
+                        <span style="--i:2;"></span>
+                        <span style="--i:9;"></span>
+                        <span style="--i:15;"></span>
+                        <span style="--i:4;"></span>
+                        <span style="--i:19;"></span>
+                    </div>
+                    <div class="circle">
+                        <div class="tea"></div>
+                    </div>
+                </div>
+            <div class="handle"></div>
+        </div>
+    </div>
+   
+      
+      
+    
+</body>
+</html>
